@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils", "Quack.Utils\Quack.Utils.csproj", "{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.Tasks", "Quack.Utils.Tasks\Quack.Utils.Tasks.csproj", "{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A29CC24-97B8-4E89-B38D-463491443804}
+	EndGlobalSection
+EndGlobal
