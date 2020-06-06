@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Quack.Utils
+namespace Quack.Utils.TestHelpers
 {
     public class Class1
     {

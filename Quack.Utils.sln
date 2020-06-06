@@ -3,9 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils", "Quack.Utils\Quack.Utils.csproj", "{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils", "Quack.Utils\Quack.Utils.csproj", "{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.Tasks", "Quack.Utils.Tasks\Quack.Utils.Tasks.csproj", "{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.Tasks", "Quack.Utils.Tasks\Quack.Utils.Tasks.csproj", "{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.UriBuilder", "Quack.Utils.UriBuilder\Quack.Utils.UriBuilder.csproj", "{BB9A779F-DC51-4DA8-B6B3-722A2E192589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.Functional", "Quack.Utils.Functional\Quack.Utils.Functional.csproj", "{90E79E14-9AC4-468E-904D-DC5847D280CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.Functional.Tests", "Quack.Utils.Functional.Tests\Quack.Utils.Functional.Tests.csproj", "{B34C162B-A6A3-40AA-AB77-5ED6901B334E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{87A35A9D-1F6F-424A-9ED3-4D99BC426558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.TestHelpers", "Quack.Utils.TestHelpers\Quack.Utils.TestHelpers.csproj", "{58BD7D93-A83C-45A8-BF7B-7FA11C422714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Validation", "Quack.Validation\Quack.Validation.csproj", "{608C8121-71F4-4373-A14E-9231F51F08C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +33,32 @@ Global
 		{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9A779F-DC51-4DA8-B6B3-722A2E192589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9A779F-DC51-4DA8-B6B3-722A2E192589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9A779F-DC51-4DA8-B6B3-722A2E192589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9A779F-DC51-4DA8-B6B3-722A2E192589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E79E14-9AC4-468E-904D-DC5847D280CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E79E14-9AC4-468E-904D-DC5847D280CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E79E14-9AC4-468E-904D-DC5847D280CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E79E14-9AC4-468E-904D-DC5847D280CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B34C162B-A6A3-40AA-AB77-5ED6901B334E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B34C162B-A6A3-40AA-AB77-5ED6901B334E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B34C162B-A6A3-40AA-AB77-5ED6901B334E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B34C162B-A6A3-40AA-AB77-5ED6901B334E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BD7D93-A83C-45A8-BF7B-7FA11C422714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BD7D93-A83C-45A8-BF7B-7FA11C422714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BD7D93-A83C-45A8-BF7B-7FA11C422714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BD7D93-A83C-45A8-BF7B-7FA11C422714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{608C8121-71F4-4373-A14E-9231F51F08C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608C8121-71F4-4373-A14E-9231F51F08C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608C8121-71F4-4373-A14E-9231F51F08C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608C8121-71F4-4373-A14E-9231F51F08C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B34C162B-A6A3-40AA-AB77-5ED6901B334E} = {87A35A9D-1F6F-424A-9ED3-4D99BC426558}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A29CC24-97B8-4E89-B38D-463491443804}
