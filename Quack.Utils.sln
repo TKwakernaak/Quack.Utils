@@ -7,17 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils", "Quack.Utils\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.Tasks", "Quack.Utils.Tasks\Quack.Utils.Tasks.csproj", "{A4DBB4AD-9D58-4893-B24C-945FF55EBD02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.UriBuilder", "Quack.Utils.UriBuilder\Quack.Utils.UriBuilder.csproj", "{BB9A779F-DC51-4DA8-B6B3-722A2E192589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.UriBuilder", "Quack.Utils.UriBuilder\Quack.Utils.UriBuilder.csproj", "{BB9A779F-DC51-4DA8-B6B3-722A2E192589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.Functional", "Quack.Utils.Functional\Quack.Utils.Functional.csproj", "{90E79E14-9AC4-468E-904D-DC5847D280CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.Functional", "Quack.Utils.Functional\Quack.Utils.Functional.csproj", "{90E79E14-9AC4-468E-904D-DC5847D280CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.Functional.Tests", "Quack.Utils.Functional.Tests\Quack.Utils.Functional.Tests.csproj", "{B34C162B-A6A3-40AA-AB77-5ED6901B334E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.Functional.Tests", "Quack.Utils.Functional.Tests\Quack.Utils.Functional.Tests.csproj", "{B34C162B-A6A3-40AA-AB77-5ED6901B334E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{87A35A9D-1F6F-424A-9ED3-4D99BC426558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.TestHelpers", "Quack.Utils.TestHelpers\Quack.Utils.TestHelpers.csproj", "{58BD7D93-A83C-45A8-BF7B-7FA11C422714}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.TestHelpers", "Quack.Utils.TestHelpers\Quack.Utils.TestHelpers.csproj", "{58BD7D93-A83C-45A8-BF7B-7FA11C422714}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Validation", "Quack.Validation\Quack.Validation.csproj", "{608C8121-71F4-4373-A14E-9231F51F08C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Validation", "Quack.Validation\Quack.Validation.csproj", "{608C8121-71F4-4373-A14E-9231F51F08C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.Performance", "Quack.Utils.Performance\Quack.Utils.Performance.csproj", "{34E196C6-576E-43B3-B23F-8AE3DE335ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Validation.Tests", "Quack.Validation.Tests\Quack.Validation.Tests.csproj", "{2BBFD0A8-CCA2-4F32-BCB6-D38224B03E9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,12 +57,21 @@ Global
 		{608C8121-71F4-4373-A14E-9231F51F08C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{608C8121-71F4-4373-A14E-9231F51F08C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{608C8121-71F4-4373-A14E-9231F51F08C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E196C6-576E-43B3-B23F-8AE3DE335ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E196C6-576E-43B3-B23F-8AE3DE335ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E196C6-576E-43B3-B23F-8AE3DE335ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E196C6-576E-43B3-B23F-8AE3DE335ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBFD0A8-CCA2-4F32-BCB6-D38224B03E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBFD0A8-CCA2-4F32-BCB6-D38224B03E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBFD0A8-CCA2-4F32-BCB6-D38224B03E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBFD0A8-CCA2-4F32-BCB6-D38224B03E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B34C162B-A6A3-40AA-AB77-5ED6901B334E} = {87A35A9D-1F6F-424A-9ED3-4D99BC426558}
+		{2BBFD0A8-CCA2-4F32-BCB6-D38224B03E9D} = {87A35A9D-1F6F-424A-9ED3-4D99BC426558}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A29CC24-97B8-4E89-B38D-463491443804}

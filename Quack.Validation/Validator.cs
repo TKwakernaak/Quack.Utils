@@ -52,12 +52,12 @@ public struct ValidationResult
 {
     public ValidationResult(bool isValid, List<string> errors)
     {
-        IsSuccess = isValid;
+        IsValid = isValid;
         ValidationMessages = errors;
     }
-    public bool IsSuccess { get; private set; }
+    public bool IsValid { get; private set; }
 
-    public bool IsFailure => !IsSuccess;
+    public bool IsInvalid => !IsValid;
 
     public List<string> ValidationMessages { get; private set; }
 }
