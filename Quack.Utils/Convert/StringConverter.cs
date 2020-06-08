@@ -13,14 +13,14 @@ namespace Quack.Utils.Convert
         /// </summary>
         /// <typeparam name="TOutput"></typeparam>
         /// <param name="value"></param>
-        /// <exception cref="NotConvertibleException"></exception>
+        /// <exception cref="NotConvertableException"></exception>
         public static TOutput To<TOutput>(this string value) where TOutput : struct
         {
             TypeConverter converter = TypeDescriptor.GetConverter(typeof(TOutput));
 
             return converter.CanConvertFrom(typeof(string))
                    ? (TOutput)converter.ConvertFrom(value)
-                   : throw new NotConvertibleException($"Unable to convert type {typeof(string)} with value {value } " +
+                   : throw new NotConvertableException($"Unable to convert type {typeof(string)} with value {value } " +
                                                        $"to type {typeof(TOutput)}");
         }
     }
