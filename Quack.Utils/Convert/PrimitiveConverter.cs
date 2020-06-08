@@ -6,9 +6,6 @@ using Quack.Utils.Exceptions;
 
 namespace Quack.Utils.Convert
 {
-    /// <summary>
-    /// Convert string Value to T.
-    /// </summary>
     public static class StringConverter
     {
         /// <summary>
