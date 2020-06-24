@@ -5,25 +5,24 @@ using Quack.Validation.Contracts;
 
 namespace Quack.Validation
 {
-    public static class WrapExtensions
+    public static class ValidatableObjectExtensions
     {
-
         /// <summary>
         ///  Wrap T into ValidatableObject<typeparamref name="T"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="input"></param>
-        /// <param name="rules"></param>
-        public static ValidatableObject<T> Wrap<T>(this T input, params IValidationRule<T>[] rules)
+        /// <param name="ruleFactory"></param>
+        public static ValidatableObject<T> ToValidatableObject<T>(this T input, params Func<IValidationRule<T>>[] ruleFactory)
         {
             var validatableObject = new ValidatableObject<T>();
             validatableObject.Value = input;
 
-            if (rules != null)
+            if (ruleFactory != null)
             {
-                foreach (var rule in rules)
+                foreach (var rule in ruleFactory)
                 {
-                    validatableObject.AddValidation(() => rule);
+                    validatableObject.AddValidation(() => rule());
                 }
             }
 

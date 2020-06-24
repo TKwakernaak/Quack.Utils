@@ -25,8 +25,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Validation.Tests", "Q
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.Tests", "Quack.Utils.Tests\Quack.Utils.Tests.csproj", "{60466803-08C8-4F8E-821D-B43972CEBF0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Utils.FileHelper", "Quack.Utils.FileHelper\Quack.Utils.FileHelper.csproj", "{E390A669-2ACA-4A66-99A8-E52F1A5DB195}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,10 +71,6 @@ Global
 		{60466803-08C8-4F8E-821D-B43972CEBF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60466803-08C8-4F8E-821D-B43972CEBF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60466803-08C8-4F8E-821D-B43972CEBF0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E390A669-2ACA-4A66-99A8-E52F1A5DB195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E390A669-2ACA-4A66-99A8-E52F1A5DB195}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E390A669-2ACA-4A66-99A8-E52F1A5DB195}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E390A669-2ACA-4A66-99A8-E52F1A5DB195}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
