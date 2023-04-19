@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Reflection\" />
+    <Compile Remove="Reflection\**" />
+    <EmbeddedResource Remove="Reflection\**" />
+    <None Remove="Reflection\**" />
   </ItemGroup>
 
 </Project>

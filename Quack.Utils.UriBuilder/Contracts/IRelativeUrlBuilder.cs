@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kwaklibs.Utils.UriBuilder.Contracts
+namespace Quack.Utils.UriBuilder.Contracts
 {
     public interface IRelativeUrlBuilder : IBuildUrl
     {

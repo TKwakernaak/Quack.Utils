@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using System.IO;
-using Sundio.Player.Sidecar.Domain.Models.PriceReport;
 using System;
 
 namespace Quack.Utils.Files
