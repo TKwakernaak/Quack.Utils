@@ -1,7 +1,7 @@
 ﻿using System;
-using Kwaklibs.Utils.UriBuilder.Contracts;
+using Quack.Utils.UriBuilder.Contracts;
 
-namespace Kwaklibs.Utils.UriBuilder
+namespace Quack.Utils.UriBuilder
 {
     /// <summary>
     /// provides an abstraction over various Httputilities to easily build uri's

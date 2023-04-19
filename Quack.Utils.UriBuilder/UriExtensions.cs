@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace Kwaklibs.Utils.UriBuilder
+namespace Quack.Utils.UriBuilder
 {
     public static class UriExtensions
     {

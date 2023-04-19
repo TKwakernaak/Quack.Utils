@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Sundio.Player.Sidecar.Domain.Models.PriceReport
+namespace Quack.Utils.Files
 {
     /// <summary>
     /// provides a simple abstraction over file paths.
