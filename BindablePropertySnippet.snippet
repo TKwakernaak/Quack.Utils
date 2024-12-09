@@ -24,45 +24,42 @@
         </Literal>
         <Literal Editable="true">
           <ID>owner</ID>
-          <ToolTip>The type of the owner of this bindable property. (normally the class in which it is declared)</ToolTip>
+          <ToolTip>The type of the owner of this bindable property</ToolTip>
           <Default>Owner</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
           <ID>type</ID>
-          <ToolTip>The type of the property that your bindable property is wrapping</ToolTip>
+          <ToolTip>The type that this bindable property encapsulates </ToolTip>
           <Default>Type</Default>
           <Function>
           </Function>
         </Literal>
-        <Literal Editable="true">
-          <ID>documentation</ID>
-          <ToolTip>The documentation commentaries for your bindable property</ToolTip>
-          <Default>A bindable property</Default>
-        </Literal>
-      </Declarations>
+       </Declarations>
       <Code Language="csharp">
         <![CDATA[
 
-          #region $BPropName$
           public static readonly BindableProperty $BPropName$Property = BindableProperty.Create(nameof($BPropName$), typeof($type$), typeof($owner$), propertyChanged: (obj, old, newV) =>
+            On$BPropName$Changed(obj, old, newV)
           {
-            var me = obj as $owner$;
-            if (newV != null && !(newV is $type$)) return; 
+            var current = obj as $owner$;
+            if (newV == nu  is $type$))
+              return; 
+
             var old$BPropName$ = ($type$)old;
             var new$BPropName$ = ($type$)newV;
             me?.$BPropName$Changed(old$BPropName$, new$BPropName$);
           });
 
-          private void $BPropName$Changed($type$ old$BPropName$, $type$ new$BPropName$)
+          private static void On$BPropName$Changed(object owner, $type$ old$BPropName$, $type$ new$BPropName$)
           {
+            var current = owner as $owner$;
 
+            var old$BPropName$Value = ($type$)old$BPropName$;
+            var new$BPropName$Value = ($type$)new$BPropName$;
           }
 
-          /// <summary>
-          /// $documentation$
-          /// </summary>
           public $type$ $BPropName$
           {
             get => ($type$)GetValue($BPropName$Property); 
