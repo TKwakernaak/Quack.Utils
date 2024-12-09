@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>BindableProperty</Title>
+      <Description>
+        Type 'bprop' to create
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bprop</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>BPropName</ID>
+          <ToolTip>Enter the bindable property name</ToolTip>
+          <Default>MyProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>owner</ID>
+          <ToolTip>The type of the owner of this bindable property. (normally the class in which it is declared)</ToolTip>
+          <Default>Owner</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>The type of the property that your bindable property is wrapping</ToolTip>
+          <Default>Type</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>documentation</ID>
+          <ToolTip>The documentation commentaries for your bindable property</ToolTip>
+          <Default>A bindable property</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[
+
+          #region $BPropName$
+          public static readonly BindableProperty $BPropName$Property = BindableProperty.Create(nameof($BPropName$), typeof($type$), typeof($owner$), propertyChanged: (obj, old, newV) =>
+          {
+            var me = obj as $owner$;
+            if (newV != null && !(newV is $type$)) return; 
+            var old$BPropName$ = ($type$)old;
+            var new$BPropName$ = ($type$)newV;
+            me?.$BPropName$Changed(old$BPropName$, new$BPropName$);
+          });
+
+          private void $BPropName$Changed($type$ old$BPropName$, $type$ new$BPropName$)
+          {
+
+          }
+
+          /// <summary>
+          /// $documentation$
+          /// </summary>
+          public $type$ $BPropName$
+          {
+            get => ($type$)GetValue($BPropName$Property); 
+            set => SetValue($BPropName$Property, value); 
+          }
+          #endregion
+
+        $end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
