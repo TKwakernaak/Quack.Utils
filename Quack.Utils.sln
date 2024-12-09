@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils", "Quack.Utils\Quack.Utils.csproj", "{CFEE8417-93FE-4A09-86E5-29F50CB1FADD}"
 EndProject
@@ -24,6 +24,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Validation.Tests", "Quack.Validation.Tests\Quack.Validation.Tests.csproj", "{2BBFD0A8-CCA2-4F32-BCB6-D38224B03E9D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quack.Utils.Tests", "Quack.Utils.Tests\Quack.Utils.Tests.csproj", "{60466803-08C8-4F8E-821D-B43972CEBF0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snippets", "Snippets", "{D8AA09E6-ACF4-45CB-B007-80B23BFAEB44}"
+	ProjectSection(SolutionItems) = preProject
+		BindablePropertySnippet.txt = BindablePropertySnippet.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
