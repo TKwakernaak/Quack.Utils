@@ -31,33 +31,29 @@
         </Literal>
         <Literal Editable="true">
           <ID>type</ID>
-          <ToolTip>The type that this bindable property encapsulates </ToolTip>
+          <ToolTip>The wrapper type </ToolTip>
           <Default>Type</Default>
           <Function>
           </Function>
         </Literal>
-       </Declarations>
+        <Literal Editable="true">
+          <ID>documentation</ID>
+          <ToolTip>The bindable property docs</ToolTip>
+          <Default>A bindable property</Default>
+        </Literal>
+      </Declarations>
       <Code Language="csharp">
         <![CDATA[
 
           public static readonly BindableProperty $BPropName$Property = BindableProperty.Create(nameof($BPropName$), typeof($type$), typeof($owner$), propertyChanged: (obj, old, newV) =>
-            On$BPropName$Changed(obj, old, newV)
-          {
-            var current = obj as $owner$;
-            if (newV == nu  is $type$))
-              return; 
-
-            var old$BPropName$ = ($type$)old;
-            var new$BPropName$ = ($type$)newV;
-            me?.$BPropName$Changed(old$BPropName$, new$BPropName$);
-          });
+            On$BPropName$Changed(obj, old, newv));
 
           private static void On$BPropName$Changed(object owner, $type$ old$BPropName$, $type$ new$BPropName$)
           {
             var current = owner as $owner$;
 
-            var old$BPropName$Value = ($type$)old$BPropName$;
-            var new$BPropName$Value = ($type$)new$BPropName$;
+            var old$BPropName$ = ($type$)old;
+            var new$BPropName$ = ($type$)newV;
           }
 
           public $type$ $BPropName$
